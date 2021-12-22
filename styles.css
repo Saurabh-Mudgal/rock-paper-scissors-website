@@ -1,0 +1,55 @@
+body {
+    background-color: #666;
+}
+
+.turn{
+    display: flex;
+    justify-content: center;
+    color: cadetblue;
+    font-size: 2rem;
+}
+
+.turn-record{
+    margin-left: 1rem;
+    color: #333;
+}
+
+.selection-options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.selection-button {
+    background: none;
+    border: none;
+    font-size: 4rem;
+    cursor: pointer;
+    transition: 100ms;
+}
+
+.selection-button:hover {
+    transform: scale(1.5);
+}
+
+.results {
+    margin: 4rem;
+    font-size: 2rem;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.data-your-score, .data-computer-score {
+    margin-left: 0.5rem;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.selection {
+    opacity: 0.5;
+}
+
+.selection.winner {
+    opacity: 1;
+    font-size: 2.75rem;
+}
